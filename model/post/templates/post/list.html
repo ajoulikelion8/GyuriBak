@@ -1,0 +1,12 @@
+{% if post_list %} 
+        {% for i in post_list %}
+            {{i.pk}}
+            <p>{{i.name}}</p>
+            <p>{{i.title}}</p>
+            <p>{{i.body}}</p>
+        {% endfor %}
+
+    {% else %}
+        <p> 작성된 글이 없는디여 </p>
+
+{% endif %}
